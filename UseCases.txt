@@ -1,0 +1,28 @@
+
+Scenario's:
+
+1.Want to Create a new Remote Folder.(Sync)   *
+
+2.Want to remove an existing folder.(Sync)  *
+
+3.list of files and folder in a given path for rendering stuffs in UI.(Sync)    *
+
+4.Want to select and delete multiple existing folder.(Sync) *
+
+5.Want to rename a file or folder.(Sync)    *
+
+6.Move a file into a different folder.(Sync)   *
+
+7.Move multiple files or folders into a different folder.(Sync)   *
+
+8.Providing a download option to manually trigger a download.   *
+
+9.Files and folder details. *
+
+10.Able to stream videos and view photos online without downloading.    *
+
+11.All errors should be received in a email.
+
+12.Get link or should be able to share via whatsapp or email.
+
+13.Able to upload stuffs into cloud.
