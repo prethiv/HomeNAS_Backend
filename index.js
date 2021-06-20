@@ -11,6 +11,7 @@ const rename = require('./core/renameNAS')
 const serveFile =require('./core/serveFiles')
 const strs= require('./core/stream')
 const fileUtil = require('./core/fileUtil')
+const uploader = require('./core/uploader')
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(bodyParser.json())
@@ -75,6 +76,22 @@ app.get("/video", function (req, res) {
 
 app.get('/getfileInfo',function(req,res){
     fileUtil.getFileInfo(req,res)
+})
+
+app.get('/fileUpload',function(req,res){
+    uploader.loadfileUploaderPage(req,res);
+})
+
+app.get('/checkstatus',function(req,res){
+    uploader.checkstatus(req,res);
+})
+
+app.post('/dataupload',function(req,res){
+    uploader.uploader(req,res);
+})
+
+app.post('/getFileName',function(req,res){
+    uploader.getFileName(req,res);
 })
 
 app.get('/', (req, res) => {

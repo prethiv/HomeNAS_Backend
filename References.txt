@@ -35,3 +35,7 @@ app.get("/video", function (req, res) {
   // Stream the video chunk to the client
   videoStream.pipe(res);
 });
+
+Stackoverflow:
+
+https://stackoverflow.com/questions/31529013/nodejs-file-upload-with-progress-bar-using-core-nodejs-and-the-original-node-s

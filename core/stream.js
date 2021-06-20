@@ -1,6 +1,8 @@
 const logger = require('../logger/NASlogger')
 const fs = require('fs')
 const fname = 'stream.js'
+const mime = require('mime-types')
+
 
 module.exports = {
     loadVideoPlayer:function(req,res){
@@ -32,11 +34,12 @@ module.exports = {
         const start = Number(range.replace(/\D/g, ""));
         const end = Math.min(start + CHUNK_SIZE, videoSize - 1);
         const contentLength = end - start + 1;
+        let contentType = mime.lookup(videoPath);
         const headers = {
           "Content-Range": `bytes ${start}-${end}/${videoSize}`,
           "Accept-Ranges": "bytes",
           "Content-Length": contentLength,
-          "Content-Type": "video/mp4",
+          "Content-Type": contentType,
         };
         // HTTP Status 206 for Partial Content
         res.writeHead(206, headers);
