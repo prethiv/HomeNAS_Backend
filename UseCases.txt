@@ -25,4 +25,8 @@ Scenario's:
 
 12.Get link or should be able to share via whatsapp or email.
 
-13.Able to upload stuffs into cloud.
+13.Able to upload stuffs into cloud. *
+
+14.Request authorization and providing Security via 2FA.
+
+15.Providing Search options.
