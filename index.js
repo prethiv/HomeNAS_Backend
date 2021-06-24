@@ -74,6 +74,14 @@ app.get("/video", function (req, res) {
     strs.streamVideoPlayer(req,res);
 });
 
+app.get("/audioplayer",(req,res)=>{
+    strs.loadAudioPlayer(req,res);
+});
+
+app.get("/audio",function(req,res){
+    strs.streamAudioPlayer(req,res);
+});
+
 app.get('/getfileInfo',function(req,res){
     fileUtil.getFileInfo(req,res)
 })

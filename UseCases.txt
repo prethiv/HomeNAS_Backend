@@ -30,3 +30,5 @@ Scenario's:
 14.Request authorization and providing Security via 2FA.
 
 15.Providing Search options.
+
+16.Able to stream music files online . *
